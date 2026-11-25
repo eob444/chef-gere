@@ -69,7 +69,7 @@
       text-decoration: none;
     }
     .logo span { color: var(--gold); }
-    .logo-mark { width: 42px; height: 42px; flex: 0 0 auto; }
+    .logo-mark { height: 76px; width: auto; max-width: min(280px, 58vw); flex: 0 0 auto; object-fit: contain; }
     .nav-links { display: flex; gap: 1.75rem; list-style: none; }
     .nav-links a {
       color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500;
@@ -182,16 +182,7 @@
   <header>
     <div class="container nav">
       <a href="#" class="logo">
-        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <circle cx="32" cy="29" r="23" fill="#0b0b0b" stroke="#d4af37" stroke-width="1.5"/>
-          <path fill="#f4e4b0" d="M18 30.5c0-7.2 5.4-12.2 14-12.2s14 5 14 12.2v1.2H18v-1.2z"/>
-          <path fill="#d4af37" d="M20.5 22.2a6.2 6.2 0 0 1 4.8-2.2 5.4 5.4 0 0 1 4.2 2 5.6 5.6 0 0 1 5 0 5.4 5.4 0 0 1 4.2-2 6.2 6.2 0 0 1 4.6 2.4"/>
-          <path fill="#d4af37" d="M16.5 31.6h31v3.2c0 1.4-1.1 2.5-2.5 2.5h-26c-1.4 0-2.5-1.1-2.5-2.5v-3.2z"/>
-          <rect x="16" y="56.4" width="9.6" height="2.2" fill="#078930"/>
-          <rect x="27.2" y="56.4" width="9.6" height="2.2" fill="#fcd116"/>
-          <rect x="38.4" y="56.4" width="9.6" height="2.2" fill="#da121a"/>
-        </svg>
-        CHEF <span>GERE</span>
+        <img class="logo-mark" src="chef-gere-logo.jpg" alt="Chef Gere" />
       </a>
       <button class="menu-toggle" id="menuBtn" aria-label="Toggle menu">☰</button>
       <ul class="nav-links" id="navLinks">
